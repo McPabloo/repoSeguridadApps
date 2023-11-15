@@ -19,6 +19,12 @@ class ExampleTest extends TestCase
         $this->assertTrue(true);
     }
 
+    public function testValue():void
+    {
+        $addition = app('App\Http\Controllers\OperationsController')->add(1,2);
+        $this->assertEquals(3,$addition);
+    }
+
     
 
 }
