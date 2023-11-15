@@ -21,8 +21,8 @@ class ExampleTest extends TestCase
 
     public function testValue():void
     {
-        $addition = app('App\Http\Controllers\OperationsController')->add(1,2);
-        $this->assertEquals(3,$addition);
+        $addition = app('App\Http\Controllers\OperationsController')->add(2,2);
+        $this->assertEquals(4,$addition);
     }
 
     
